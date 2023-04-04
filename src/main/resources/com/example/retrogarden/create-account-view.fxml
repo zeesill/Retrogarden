@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="703.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.retrogarden.Controllers.CreateAccountController">
+   <children>
+      <ImageView fitHeight="85.0" fitWidth="600.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-background-sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="600.0" layoutX="6.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-create-account.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="266.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="318.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="369.0" text="Confirm Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="newPasswordHint" layoutX="309.0" layoutY="424.0" prefHeight="88.0" prefWidth="198.0" promptText="Password Hint" />
+      <Label layoutX="110.0" layoutY="424.0" text="Password Hint:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUsername" layoutX="309.0" layoutY="267.0" promptText="Username" />
+      <PasswordField fx:id="newPassword" layoutX="309.0" layoutY="319.0" promptText="Password" />
+      <PasswordField fx:id="newConfirmPassword" layoutX="309.0" layoutY="370.0" promptText="Confirm Password" />
+      <Button layoutX="241.0" layoutY="566.0" mnemonicParsing="false" onAction="#createAccountBtnPushed" prefHeight="40.0" prefWidth="118.0" text="Create Account">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="507.0" layoutY="641.0" mnemonicParsing="false" onAction="#backBtnPushed" text="Back" />
+      <ImageView fitHeight="27.0" fitWidth="600.0" layoutY="689.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-ground-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="204.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-button-left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="368.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-button-right.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

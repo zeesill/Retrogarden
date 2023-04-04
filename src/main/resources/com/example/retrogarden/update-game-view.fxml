@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="766.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.retrogarden.Controllers.UpdateGameController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="376.0" layoutX="158.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-update-game.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="703.0" fitWidth="768.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-add-update-background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="266.0" text="Update Game Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="358.0" text="Update Game Condition:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="456.0" text="Update Game Release Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="546.0" text="Update Game Price:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateGameName" layoutX="244.0" layoutY="293.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="updateGameCondition" layoutX="244.0" layoutY="385.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="updateGamePrice" layoutX="244.0" layoutY="573.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="308.0" layoutY="668.0" mnemonicParsing="false" onAction="#updateGameBtnPushed" prefHeight="39.0" prefWidth="95.0" text="Update Game" />
+      <Button layoutX="665.0" layoutY="744.0" mnemonicParsing="false" onAction="#backBtnPushed" text="Back" />
+      <DatePicker fx:id="updateGameReleaseDate" layoutX="245.0" layoutY="483.0" prefHeight="39.0" prefWidth="224.0" />
+   </children>
+</AnchorPane>

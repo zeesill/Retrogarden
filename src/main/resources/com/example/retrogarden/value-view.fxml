@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="545.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.retrogarden.Controllers.ValueController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="991.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-value-background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="347.0" layoutX="376.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-whats-it-worth.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="allRadio" layoutX="689.0" layoutY="228.0" mnemonicParsing="false" onAction="#radioBtnPushed" text="All">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="gamesRadio" layoutX="689.0" layoutY="282.0" mnemonicParsing="false" onAction="#radioBtnPushed" text="Games">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="consolesRadio" layoutX="689.0" layoutY="335.0" mnemonicParsing="false" onAction="#radioBtnPushed" text="Consoles">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="valueLabel" layoutX="334.0" layoutY="504.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="804.0" layoutY="500.0" mnemonicParsing="false" onAction="#backBtnPushed" prefHeight="34.0" prefWidth="72.0" text="Back" />
+   </children>
+</AnchorPane>

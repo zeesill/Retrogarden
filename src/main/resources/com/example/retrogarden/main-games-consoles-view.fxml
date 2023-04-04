@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="844.0" prefWidth="1056.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.retrogarden.Controllers.MainGamesConsolesController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="430.0" layoutX="864.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="445.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-logo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="consoleTableView" layoutX="154.0" layoutY="211.0" prefHeight="200.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="nameOfConsoleCol" prefWidth="234.0" text="Name of Console" />
+          <TableColumn fx:id="consoleConditionCol" minWidth="0.0" prefWidth="215.0" text="Condition" />
+            <TableColumn fx:id="consoleReleaseYearCol" prefWidth="169.0" text="Release Year" />
+            <TableColumn fx:id="consolePriceCol" prefWidth="128.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="consoleSearchField" layoutX="752.0" layoutY="175.0" promptText="Search" />
+      <Button layoutX="585.0" layoutY="420.0" mnemonicParsing="false" onAction="#addConsoleBtnPushed" text="Add Console" />
+      <Button layoutX="687.0" layoutY="420.0" mnemonicParsing="false" onAction="#updateConsoleBtnPushed" text="Update Console" />
+      <Button layoutX="804.0" layoutY="420.0" mnemonicParsing="false" onAction="#deleteConsoleBtnPushed" text="Delete Console" />
+      <TableView fx:id="gameTableView" layoutX="155.0" layoutY="525.0" prefHeight="200.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="nameOfGameCol" prefWidth="238.0" text="Name of Game" />
+          <TableColumn fx:id="gameConditionCol" prefWidth="209.0" text="Condition" />
+            <TableColumn fx:id="gameReleaseDateCol" prefWidth="172.0" text="Release Year" />
+            <TableColumn fx:id="gamePriceCol" prefWidth="127.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="gameSearchField" layoutX="753.0" layoutY="489.0" promptText="Search" />
+      <Button layoutX="627.0" layoutY="736.0" mnemonicParsing="false" onAction="#addGameBtnPushed" text="Add Game" />
+      <Button layoutX="714.0" layoutY="736.0" mnemonicParsing="false" onAction="#updateGameBtnPushed" text="Update Game" />
+      <Button layoutX="817.0" layoutY="736.0" mnemonicParsing="false" onAction="#deleteGameBtnPushed" text="Delete Game" />
+      <Button layoutX="31.0" layoutY="799.0" mnemonicParsing="false" onAction="#valueViewBtnPushed" text="View Value" />
+      <Button layoutX="129.0" layoutY="799.0" mnemonicParsing="false" onAction="#wishListBtnPushed" text="View Wishlist" />
+      <Button layoutX="965.0" layoutY="799.0" mnemonicParsing="false" onAction="#signOutBtnPushed" text="Sign Out" />
+      <ImageView fitHeight="16.0" fitWidth="195.0" layoutX="154.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-consoles-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="108.0" layoutX="155.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retrogarden-games-logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
